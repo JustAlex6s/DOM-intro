@@ -64,3 +64,9 @@ function shuffleArray(array) {
         [array[i], array[j]] = [array[j], array[i]];
     }
 }
+
+//TEST
+
+//Modifiez le script.js pour créer une nouvelle <section> avec une couleur de fond aléatoire pour chaque apprenant de votre groupe. Cette section doit contenir un paragraphe avec le nom de l'apprenant. Ces sections doivent être ajoutées dans la section <article>.
+
+
