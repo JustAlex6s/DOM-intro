@@ -26,7 +26,7 @@ const information = (e) =>  {
 
 let ul = document.querySelector('ul');
 let li = document.createElement ('li');
-let sentence = "[" + getElapsedTime() + "] Created a new"+ e.target.classList[1] + " square";
+let sentence = "[" + getElapsedTime() + "] Created a new "+ e.target.classList[1] + " square";
 li.innerHTML = sentence;
 ul.appendChild(li);
 
