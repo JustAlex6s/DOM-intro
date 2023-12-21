@@ -7,18 +7,21 @@ function myFunction() {
   document.getElementById("display-firstname").innerHTML = x;
 
   let age = document.getElementById("age").value;
+  let ageSecond = document.getElementById("a-hard-truth");
   if (age > 18){
-    document.getElementById("a-hard-truth").innerHTML = age;
-    document.getElementById("a-hard-truth").style.visibility= "visible" ;
+    ageSecond.innerHTML = age;
+    ageSecond.style.visibility= "visible" ;
   }else{
-    document.getElementById("a-hard-truth").style.visibility= "hidden" ;
+    ageSecond.style.visibility= "visible" ;
   }
 }
 
 function pwd(){
-    let pass = document.getElementById("pwd").value;
-    let passConf = document.getElementById("pwd-confirm").value;
-    if (pass == passConf && pass.length > 6 ){
+    let pass = document.getElementById("pwd");
+    let passvaleur =pass.value;
+    let passConf = document.getElementById("pwd-confirm");
+    let passConfVal =passConf.value;
+    if (passvaleur == passConfVal && passvaleur.length > 6 ){
     passConf.style.border = "2px solid #00FF00"  ;
     }else{
     passConf.style.border = "2px solid #FF3456"  ;
